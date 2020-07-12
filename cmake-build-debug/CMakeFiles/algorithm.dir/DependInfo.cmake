@@ -4,6 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/chill/Desktop/code/algorithm/dp/LIS.cpp" "/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles/algorithm.dir/dp/LIS.cpp.o"
+  "/Users/chill/Desktop/code/algorithm/dp/backpack.cpp" "/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles/algorithm.dir/dp/backpack.cpp.o"
+  "/Users/chill/Desktop/code/algorithm/dp/coins.cpp" "/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles/algorithm.dir/dp/coins.cpp.o"
   "/Users/chill/Desktop/code/algorithm/dp/fibonacci.cpp" "/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles/algorithm.dir/dp/fibonacci.cpp.o"
   "/Users/chill/Desktop/code/algorithm/main.cpp" "/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles/algorithm.dir/main.cpp.o"
   )

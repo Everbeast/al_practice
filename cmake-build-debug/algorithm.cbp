@@ -82,6 +82,15 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/chill/Desktop/code/algorithm/dp/LIS.cpp">
+			<Option target="algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chill/Desktop/code/algorithm/dp/backpack.cpp">
+			<Option target="algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chill/Desktop/code/algorithm/dp/coins.cpp">
+			<Option target="algorithm"/>
+		</Unit>
 		<Unit filename="/Users/chill/Desktop/code/algorithm/dp/fibonacci.cpp">
 			<Option target="algorithm"/>
 		</Unit>

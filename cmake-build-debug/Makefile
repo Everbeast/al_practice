@@ -123,6 +123,87 @@ algorithm/fast:
 	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/build
 .PHONY : algorithm/fast
 
+dp/LIS.o: dp/LIS.cpp.o
+
+.PHONY : dp/LIS.o
+
+# target to build an object file
+dp/LIS.cpp.o:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/dp/LIS.cpp.o
+.PHONY : dp/LIS.cpp.o
+
+dp/LIS.i: dp/LIS.cpp.i
+
+.PHONY : dp/LIS.i
+
+# target to preprocess a source file
+dp/LIS.cpp.i:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/dp/LIS.cpp.i
+.PHONY : dp/LIS.cpp.i
+
+dp/LIS.s: dp/LIS.cpp.s
+
+.PHONY : dp/LIS.s
+
+# target to generate assembly for a file
+dp/LIS.cpp.s:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/dp/LIS.cpp.s
+.PHONY : dp/LIS.cpp.s
+
+dp/backpack.o: dp/backpack.cpp.o
+
+.PHONY : dp/backpack.o
+
+# target to build an object file
+dp/backpack.cpp.o:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/dp/backpack.cpp.o
+.PHONY : dp/backpack.cpp.o
+
+dp/backpack.i: dp/backpack.cpp.i
+
+.PHONY : dp/backpack.i
+
+# target to preprocess a source file
+dp/backpack.cpp.i:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/dp/backpack.cpp.i
+.PHONY : dp/backpack.cpp.i
+
+dp/backpack.s: dp/backpack.cpp.s
+
+.PHONY : dp/backpack.s
+
+# target to generate assembly for a file
+dp/backpack.cpp.s:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/dp/backpack.cpp.s
+.PHONY : dp/backpack.cpp.s
+
+dp/coins.o: dp/coins.cpp.o
+
+.PHONY : dp/coins.o
+
+# target to build an object file
+dp/coins.cpp.o:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/dp/coins.cpp.o
+.PHONY : dp/coins.cpp.o
+
+dp/coins.i: dp/coins.cpp.i
+
+.PHONY : dp/coins.i
+
+# target to preprocess a source file
+dp/coins.cpp.i:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/dp/coins.cpp.i
+.PHONY : dp/coins.cpp.i
+
+dp/coins.s: dp/coins.cpp.s
+
+.PHONY : dp/coins.s
+
+# target to generate assembly for a file
+dp/coins.cpp.s:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/dp/coins.cpp.s
+.PHONY : dp/coins.cpp.s
+
 dp/fibonacci.o: dp/fibonacci.cpp.o
 
 .PHONY : dp/fibonacci.o
@@ -186,6 +267,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... algorithm"
+	@echo "... dp/LIS.o"
+	@echo "... dp/LIS.i"
+	@echo "... dp/LIS.s"
+	@echo "... dp/backpack.o"
+	@echo "... dp/backpack.i"
+	@echo "... dp/backpack.s"
+	@echo "... dp/coins.o"
+	@echo "... dp/coins.i"
+	@echo "... dp/coins.s"
 	@echo "... dp/fibonacci.o"
 	@echo "... dp/fibonacci.i"
 	@echo "... dp/fibonacci.s"

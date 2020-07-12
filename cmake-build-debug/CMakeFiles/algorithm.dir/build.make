@@ -83,19 +83,64 @@ CMakeFiles/algorithm.dir/dp/fibonacci.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/dp/fibonacci.cpp.s"
 	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/dp/fibonacci.cpp -o CMakeFiles/algorithm.dir/dp/fibonacci.cpp.s
 
+CMakeFiles/algorithm.dir/dp/LIS.cpp.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/dp/LIS.cpp.o: ../dp/LIS.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/algorithm.dir/dp/LIS.cpp.o"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/dp/LIS.cpp.o -c /Users/chill/Desktop/code/algorithm/dp/LIS.cpp
+
+CMakeFiles/algorithm.dir/dp/LIS.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/dp/LIS.cpp.i"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chill/Desktop/code/algorithm/dp/LIS.cpp > CMakeFiles/algorithm.dir/dp/LIS.cpp.i
+
+CMakeFiles/algorithm.dir/dp/LIS.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/dp/LIS.cpp.s"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/dp/LIS.cpp -o CMakeFiles/algorithm.dir/dp/LIS.cpp.s
+
+CMakeFiles/algorithm.dir/dp/coins.cpp.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/dp/coins.cpp.o: ../dp/coins.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/algorithm.dir/dp/coins.cpp.o"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/dp/coins.cpp.o -c /Users/chill/Desktop/code/algorithm/dp/coins.cpp
+
+CMakeFiles/algorithm.dir/dp/coins.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/dp/coins.cpp.i"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chill/Desktop/code/algorithm/dp/coins.cpp > CMakeFiles/algorithm.dir/dp/coins.cpp.i
+
+CMakeFiles/algorithm.dir/dp/coins.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/dp/coins.cpp.s"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/dp/coins.cpp -o CMakeFiles/algorithm.dir/dp/coins.cpp.s
+
+CMakeFiles/algorithm.dir/dp/backpack.cpp.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/dp/backpack.cpp.o: ../dp/backpack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/algorithm.dir/dp/backpack.cpp.o"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/dp/backpack.cpp.o -c /Users/chill/Desktop/code/algorithm/dp/backpack.cpp
+
+CMakeFiles/algorithm.dir/dp/backpack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/dp/backpack.cpp.i"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chill/Desktop/code/algorithm/dp/backpack.cpp > CMakeFiles/algorithm.dir/dp/backpack.cpp.i
+
+CMakeFiles/algorithm.dir/dp/backpack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/dp/backpack.cpp.s"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/dp/backpack.cpp -o CMakeFiles/algorithm.dir/dp/backpack.cpp.s
+
 # Object files for target algorithm
 algorithm_OBJECTS = \
 "CMakeFiles/algorithm.dir/main.cpp.o" \
-"CMakeFiles/algorithm.dir/dp/fibonacci.cpp.o"
+"CMakeFiles/algorithm.dir/dp/fibonacci.cpp.o" \
+"CMakeFiles/algorithm.dir/dp/LIS.cpp.o" \
+"CMakeFiles/algorithm.dir/dp/coins.cpp.o" \
+"CMakeFiles/algorithm.dir/dp/backpack.cpp.o"
 
 # External object files for target algorithm
 algorithm_EXTERNAL_OBJECTS =
 
 algorithm: CMakeFiles/algorithm.dir/main.cpp.o
 algorithm: CMakeFiles/algorithm.dir/dp/fibonacci.cpp.o
+algorithm: CMakeFiles/algorithm.dir/dp/LIS.cpp.o
+algorithm: CMakeFiles/algorithm.dir/dp/coins.cpp.o
+algorithm: CMakeFiles/algorithm.dir/dp/backpack.cpp.o
 algorithm: CMakeFiles/algorithm.dir/build.make
 algorithm: CMakeFiles/algorithm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable algorithm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable algorithm"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/algorithm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

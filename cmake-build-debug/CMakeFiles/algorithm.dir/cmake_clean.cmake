@@ -1,4 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/algorithm.dir/dp/LIS.cpp.o"
+  "CMakeFiles/algorithm.dir/dp/backpack.cpp.o"
+  "CMakeFiles/algorithm.dir/dp/coins.cpp.o"
   "CMakeFiles/algorithm.dir/dp/fibonacci.cpp.o"
   "CMakeFiles/algorithm.dir/main.cpp.o"
   "algorithm"
