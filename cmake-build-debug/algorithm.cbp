@@ -94,7 +94,7 @@
 		<Unit filename="/Users/chill/Desktop/code/algorithm/dp/fibonacci.cpp">
 			<Option target="algorithm"/>
 		</Unit>
-		<Unit filename="/Users/chill/Desktop/code/algorithm/main.cpp">
+		<Unit filename="/Users/chill/Desktop/code/algorithm/dp/maxSubArray.cpp">
 			<Option target="algorithm"/>
 		</Unit>
 		<Unit filename="/Users/chill/Desktop/code/algorithm/CMakeLists.txt">

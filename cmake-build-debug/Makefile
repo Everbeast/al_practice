@@ -231,32 +231,32 @@ dp/fibonacci.cpp.s:
 	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/dp/fibonacci.cpp.s
 .PHONY : dp/fibonacci.cpp.s
 
-main.o: main.cpp.o
+dp/maxSubArray.o: dp/maxSubArray.cpp.o
 
-.PHONY : main.o
+.PHONY : dp/maxSubArray.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/main.cpp.o
-.PHONY : main.cpp.o
+dp/maxSubArray.cpp.o:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/dp/maxSubArray.cpp.o
+.PHONY : dp/maxSubArray.cpp.o
 
-main.i: main.cpp.i
+dp/maxSubArray.i: dp/maxSubArray.cpp.i
 
-.PHONY : main.i
+.PHONY : dp/maxSubArray.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/main.cpp.i
-.PHONY : main.cpp.i
+dp/maxSubArray.cpp.i:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/dp/maxSubArray.cpp.i
+.PHONY : dp/maxSubArray.cpp.i
 
-main.s: main.cpp.s
+dp/maxSubArray.s: dp/maxSubArray.cpp.s
 
-.PHONY : main.s
+.PHONY : dp/maxSubArray.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/main.cpp.s
-.PHONY : main.cpp.s
+dp/maxSubArray.cpp.s:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/dp/maxSubArray.cpp.s
+.PHONY : dp/maxSubArray.cpp.s
 
 # Help Target
 help:
@@ -279,9 +279,9 @@ help:
 	@echo "... dp/fibonacci.o"
 	@echo "... dp/fibonacci.i"
 	@echo "... dp/fibonacci.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... dp/maxSubArray.o"
+	@echo "... dp/maxSubArray.i"
+	@echo "... dp/maxSubArray.s"
 .PHONY : help
 
 

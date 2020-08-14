@@ -20,27 +20,29 @@ using namespace std;
 int coinChange(vector<int>& coins, int amount)
 {
     if(amount == 0) return 0;
-    if(amount<0) return -1;
+    if(amount< 0) return -1;
     int res = INT8_MIN;
     for(auto coin : coins){
         int subproblem = coinChange(coins, amount-coin);
         if(subproblem == -1) continue;
         res = min(res, 1+subproblem);
     }
-    return res==INT8_MIN?-1:res;
+    return res==INT8_MIN ? -1 : res;
 }
 
 //memo
 int coinChange_memo(vector<int>& coins, int amount){
     map<int, int> memo;
-    if(memo.find(amount)!=memo.end())
+    if(memo.find(amount) != memo.end())
         return memo[amount];
-    if(amount==0) return 0;
-    if(amount<0) return -1;
+
+    if(amount == 0) return 0;
+    if(amount < 0) return -1;
+
     int res = INT8_MIN;
     for(auto coin : coins){
         int subproblem = coinChange_memo(coins, amount-coin);
-        if(subproblem==-1) continue;
+        if(subproblem == -1) continue;
         res = min(res, 1+subproblem);
     }
     memo[amount] = res==INT8_MIN?-1:res;
@@ -51,14 +53,15 @@ int coinChange_memo(vector<int>& coins, int amount){
 //dp[i] = x 表示 目标金额为i时，最少需要x枚硬币
 
 int coinChange_dp(vector<int>& coins, int amount){
-    vector<int> dp(amount+1, amount+1);
+    vector<int> dp(amount+1, amount+1); //目标为amount+1金额时，最多需要amount+1枚硬币
+                                        //此处输入为amount 则amount为理论无穷大
     dp[0] = 0;
-    for(int i=0;i<amount+1;i++){
+    for(int i = 0;i < amount+1;i++){
         for(auto coin : coins){
+            //无解 跳过
             if(i-coin < 0) continue;
-            dp[i] = min(dp[i], 1+dp[i-coin]);
+            dp[i] = min(dp[i], 1 + dp[i - coin]);
         }
     }
-    dp[amount] = dp[amount] == amount+1?-1:dp[amount];
-    return dp[amount];
+    return (dp[amount] == amount + 1) ? -1 : dp[amount];
 }

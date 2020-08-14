@@ -12,10 +12,10 @@ using namespace std;
 
 int lenghtOfLIS(vector<int>& nums){
     vector<int> dp(nums.size(),1);
-    for(int i=0;i<nums.size();i++){
-        for(int j=0;j<i;j++){}
-        if(nums[i]>nums[j]){
-            dp[i] = max(dp[i], dp[j]+1);
+    for(int i = 0;i < nums.size();i++){
+        for(int j = 0;j < i;j++){
+            if(nums[i] > nums[j])
+                dp[i] = max(dp[i], dp[j]+1);
         }
     }
     //遍历dp找出最大值
@@ -27,19 +27,19 @@ int lenghtOfLIS(vector<int>& nums){
 //仅供拓展: 二分查找法 （扑克牌玩法） ：证明略
 int LIS_b_search(vector<int>& nums){
     int top[nums.size()]; // 当前堆低的值
-    int piles=0; //堆的长度为lis
-    for(int i=0;i<nums.size();i++){
+    int piles = 0; //堆的长度为lis
+    for(int i = 0;i < nums.size();i++){
         int poker = nums[i];
 
         //搜索左侧边界的二分查找，left表示要插入的堆
         int left = 0, right = piles;
-        while(left<right){
+        while(left < right){
             int mid = (left+right) / 2;
-            if(top[mid]> poker) right = mid;
+            if(top[mid] > poker) right = mid;
             else if (top[mid] < poker) left = mid;
             else right=mid;  //搜索左边界
         }
-        if(left==piles) piles++;//没有合适的堆，新建一个堆；
+        if(left == piles) piles++;//没有合适的堆，新建一个堆；
         top[left] = poker;
     }
     return piles;

@@ -3,7 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/algorithm.dir/dp/backpack.cpp.o"
   "CMakeFiles/algorithm.dir/dp/coins.cpp.o"
   "CMakeFiles/algorithm.dir/dp/fibonacci.cpp.o"
-  "CMakeFiles/algorithm.dir/main.cpp.o"
+  "CMakeFiles/algorithm.dir/dp/maxSubArray.cpp.o"
   "algorithm"
   "algorithm.pdb"
 )
