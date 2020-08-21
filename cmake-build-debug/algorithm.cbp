@@ -82,19 +82,55 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/chill/Desktop/code/algorithm/dp/LCS.cpp">
+			<Option target="algorithm"/>
+		</Unit>
 		<Unit filename="/Users/chill/Desktop/code/algorithm/dp/LIS.cpp">
+			<Option target="algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chill/Desktop/code/algorithm/dp/REM.cpp">
+			<Option target="algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chill/Desktop/code/algorithm/dp/SuperEggDrop.cpp">
 			<Option target="algorithm"/>
 		</Unit>
 		<Unit filename="/Users/chill/Desktop/code/algorithm/dp/backpack.cpp">
 			<Option target="algorithm"/>
 		</Unit>
+		<Unit filename="/Users/chill/Desktop/code/algorithm/dp/burstBalloons.cpp">
+			<Option target="algorithm"/>
+		</Unit>
 		<Unit filename="/Users/chill/Desktop/code/algorithm/dp/coins.cpp">
+			<Option target="algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chill/Desktop/code/algorithm/dp/editDistant.cpp">
 			<Option target="algorithm"/>
 		</Unit>
 		<Unit filename="/Users/chill/Desktop/code/algorithm/dp/fibonacci.cpp">
 			<Option target="algorithm"/>
 		</Unit>
+		<Unit filename="/Users/chill/Desktop/code/algorithm/dp/fourKeyboard.cpp">
+			<Option target="algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chill/Desktop/code/algorithm/dp/greedyAl.cpp">
+			<Option target="algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chill/Desktop/code/algorithm/dp/houseRobber.cpp">
+			<Option target="algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chill/Desktop/code/algorithm/dp/kmp.cpp">
+			<Option target="algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chill/Desktop/code/algorithm/dp/longestPalindromeSubseq.cpp">
+			<Option target="algorithm"/>
+		</Unit>
 		<Unit filename="/Users/chill/Desktop/code/algorithm/dp/maxSubArray.cpp">
+			<Option target="algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chill/Desktop/code/algorithm/dp/sellStock.cpp">
+			<Option target="algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chill/Desktop/code/algorithm/dp/stoneGame.cpp">
 			<Option target="algorithm"/>
 		</Unit>
 		<Unit filename="/Users/chill/Desktop/code/algorithm/CMakeLists.txt">

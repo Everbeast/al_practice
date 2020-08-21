@@ -57,9 +57,22 @@ include CMakeFiles/algorithm.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/algorithm.dir/flags.make
 
+CMakeFiles/algorithm.dir/dp/LCS.cpp.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/dp/LCS.cpp.o: ../dp/LCS.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/algorithm.dir/dp/LCS.cpp.o"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/dp/LCS.cpp.o -c /Users/chill/Desktop/code/algorithm/dp/LCS.cpp
+
+CMakeFiles/algorithm.dir/dp/LCS.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/dp/LCS.cpp.i"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chill/Desktop/code/algorithm/dp/LCS.cpp > CMakeFiles/algorithm.dir/dp/LCS.cpp.i
+
+CMakeFiles/algorithm.dir/dp/LCS.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/dp/LCS.cpp.s"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/dp/LCS.cpp -o CMakeFiles/algorithm.dir/dp/LCS.cpp.s
+
 CMakeFiles/algorithm.dir/dp/LIS.cpp.o: CMakeFiles/algorithm.dir/flags.make
 CMakeFiles/algorithm.dir/dp/LIS.cpp.o: ../dp/LIS.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/algorithm.dir/dp/LIS.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/algorithm.dir/dp/LIS.cpp.o"
 	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/dp/LIS.cpp.o -c /Users/chill/Desktop/code/algorithm/dp/LIS.cpp
 
 CMakeFiles/algorithm.dir/dp/LIS.cpp.i: cmake_force
@@ -70,9 +83,35 @@ CMakeFiles/algorithm.dir/dp/LIS.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/dp/LIS.cpp.s"
 	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/dp/LIS.cpp -o CMakeFiles/algorithm.dir/dp/LIS.cpp.s
 
+CMakeFiles/algorithm.dir/dp/REM.cpp.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/dp/REM.cpp.o: ../dp/REM.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/algorithm.dir/dp/REM.cpp.o"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/dp/REM.cpp.o -c /Users/chill/Desktop/code/algorithm/dp/REM.cpp
+
+CMakeFiles/algorithm.dir/dp/REM.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/dp/REM.cpp.i"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chill/Desktop/code/algorithm/dp/REM.cpp > CMakeFiles/algorithm.dir/dp/REM.cpp.i
+
+CMakeFiles/algorithm.dir/dp/REM.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/dp/REM.cpp.s"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/dp/REM.cpp -o CMakeFiles/algorithm.dir/dp/REM.cpp.s
+
+CMakeFiles/algorithm.dir/dp/SuperEggDrop.cpp.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/dp/SuperEggDrop.cpp.o: ../dp/SuperEggDrop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/algorithm.dir/dp/SuperEggDrop.cpp.o"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/dp/SuperEggDrop.cpp.o -c /Users/chill/Desktop/code/algorithm/dp/SuperEggDrop.cpp
+
+CMakeFiles/algorithm.dir/dp/SuperEggDrop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/dp/SuperEggDrop.cpp.i"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chill/Desktop/code/algorithm/dp/SuperEggDrop.cpp > CMakeFiles/algorithm.dir/dp/SuperEggDrop.cpp.i
+
+CMakeFiles/algorithm.dir/dp/SuperEggDrop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/dp/SuperEggDrop.cpp.s"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/dp/SuperEggDrop.cpp -o CMakeFiles/algorithm.dir/dp/SuperEggDrop.cpp.s
+
 CMakeFiles/algorithm.dir/dp/backpack.cpp.o: CMakeFiles/algorithm.dir/flags.make
 CMakeFiles/algorithm.dir/dp/backpack.cpp.o: ../dp/backpack.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/algorithm.dir/dp/backpack.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/algorithm.dir/dp/backpack.cpp.o"
 	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/dp/backpack.cpp.o -c /Users/chill/Desktop/code/algorithm/dp/backpack.cpp
 
 CMakeFiles/algorithm.dir/dp/backpack.cpp.i: cmake_force
@@ -83,9 +122,22 @@ CMakeFiles/algorithm.dir/dp/backpack.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/dp/backpack.cpp.s"
 	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/dp/backpack.cpp -o CMakeFiles/algorithm.dir/dp/backpack.cpp.s
 
+CMakeFiles/algorithm.dir/dp/burstBalloons.cpp.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/dp/burstBalloons.cpp.o: ../dp/burstBalloons.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/algorithm.dir/dp/burstBalloons.cpp.o"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/dp/burstBalloons.cpp.o -c /Users/chill/Desktop/code/algorithm/dp/burstBalloons.cpp
+
+CMakeFiles/algorithm.dir/dp/burstBalloons.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/dp/burstBalloons.cpp.i"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chill/Desktop/code/algorithm/dp/burstBalloons.cpp > CMakeFiles/algorithm.dir/dp/burstBalloons.cpp.i
+
+CMakeFiles/algorithm.dir/dp/burstBalloons.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/dp/burstBalloons.cpp.s"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/dp/burstBalloons.cpp -o CMakeFiles/algorithm.dir/dp/burstBalloons.cpp.s
+
 CMakeFiles/algorithm.dir/dp/coins.cpp.o: CMakeFiles/algorithm.dir/flags.make
 CMakeFiles/algorithm.dir/dp/coins.cpp.o: ../dp/coins.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/algorithm.dir/dp/coins.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/algorithm.dir/dp/coins.cpp.o"
 	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/dp/coins.cpp.o -c /Users/chill/Desktop/code/algorithm/dp/coins.cpp
 
 CMakeFiles/algorithm.dir/dp/coins.cpp.i: cmake_force
@@ -96,9 +148,22 @@ CMakeFiles/algorithm.dir/dp/coins.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/dp/coins.cpp.s"
 	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/dp/coins.cpp -o CMakeFiles/algorithm.dir/dp/coins.cpp.s
 
+CMakeFiles/algorithm.dir/dp/editDistant.cpp.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/dp/editDistant.cpp.o: ../dp/editDistant.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/algorithm.dir/dp/editDistant.cpp.o"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/dp/editDistant.cpp.o -c /Users/chill/Desktop/code/algorithm/dp/editDistant.cpp
+
+CMakeFiles/algorithm.dir/dp/editDistant.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/dp/editDistant.cpp.i"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chill/Desktop/code/algorithm/dp/editDistant.cpp > CMakeFiles/algorithm.dir/dp/editDistant.cpp.i
+
+CMakeFiles/algorithm.dir/dp/editDistant.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/dp/editDistant.cpp.s"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/dp/editDistant.cpp -o CMakeFiles/algorithm.dir/dp/editDistant.cpp.s
+
 CMakeFiles/algorithm.dir/dp/fibonacci.cpp.o: CMakeFiles/algorithm.dir/flags.make
 CMakeFiles/algorithm.dir/dp/fibonacci.cpp.o: ../dp/fibonacci.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/algorithm.dir/dp/fibonacci.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/algorithm.dir/dp/fibonacci.cpp.o"
 	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/dp/fibonacci.cpp.o -c /Users/chill/Desktop/code/algorithm/dp/fibonacci.cpp
 
 CMakeFiles/algorithm.dir/dp/fibonacci.cpp.i: cmake_force
@@ -109,9 +174,74 @@ CMakeFiles/algorithm.dir/dp/fibonacci.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/dp/fibonacci.cpp.s"
 	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/dp/fibonacci.cpp -o CMakeFiles/algorithm.dir/dp/fibonacci.cpp.s
 
+CMakeFiles/algorithm.dir/dp/fourKeyboard.cpp.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/dp/fourKeyboard.cpp.o: ../dp/fourKeyboard.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/algorithm.dir/dp/fourKeyboard.cpp.o"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/dp/fourKeyboard.cpp.o -c /Users/chill/Desktop/code/algorithm/dp/fourKeyboard.cpp
+
+CMakeFiles/algorithm.dir/dp/fourKeyboard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/dp/fourKeyboard.cpp.i"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chill/Desktop/code/algorithm/dp/fourKeyboard.cpp > CMakeFiles/algorithm.dir/dp/fourKeyboard.cpp.i
+
+CMakeFiles/algorithm.dir/dp/fourKeyboard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/dp/fourKeyboard.cpp.s"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/dp/fourKeyboard.cpp -o CMakeFiles/algorithm.dir/dp/fourKeyboard.cpp.s
+
+CMakeFiles/algorithm.dir/dp/greedyAl.cpp.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/dp/greedyAl.cpp.o: ../dp/greedyAl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/algorithm.dir/dp/greedyAl.cpp.o"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/dp/greedyAl.cpp.o -c /Users/chill/Desktop/code/algorithm/dp/greedyAl.cpp
+
+CMakeFiles/algorithm.dir/dp/greedyAl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/dp/greedyAl.cpp.i"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chill/Desktop/code/algorithm/dp/greedyAl.cpp > CMakeFiles/algorithm.dir/dp/greedyAl.cpp.i
+
+CMakeFiles/algorithm.dir/dp/greedyAl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/dp/greedyAl.cpp.s"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/dp/greedyAl.cpp -o CMakeFiles/algorithm.dir/dp/greedyAl.cpp.s
+
+CMakeFiles/algorithm.dir/dp/houseRobber.cpp.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/dp/houseRobber.cpp.o: ../dp/houseRobber.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/algorithm.dir/dp/houseRobber.cpp.o"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/dp/houseRobber.cpp.o -c /Users/chill/Desktop/code/algorithm/dp/houseRobber.cpp
+
+CMakeFiles/algorithm.dir/dp/houseRobber.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/dp/houseRobber.cpp.i"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chill/Desktop/code/algorithm/dp/houseRobber.cpp > CMakeFiles/algorithm.dir/dp/houseRobber.cpp.i
+
+CMakeFiles/algorithm.dir/dp/houseRobber.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/dp/houseRobber.cpp.s"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/dp/houseRobber.cpp -o CMakeFiles/algorithm.dir/dp/houseRobber.cpp.s
+
+CMakeFiles/algorithm.dir/dp/kmp.cpp.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/dp/kmp.cpp.o: ../dp/kmp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/algorithm.dir/dp/kmp.cpp.o"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/dp/kmp.cpp.o -c /Users/chill/Desktop/code/algorithm/dp/kmp.cpp
+
+CMakeFiles/algorithm.dir/dp/kmp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/dp/kmp.cpp.i"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chill/Desktop/code/algorithm/dp/kmp.cpp > CMakeFiles/algorithm.dir/dp/kmp.cpp.i
+
+CMakeFiles/algorithm.dir/dp/kmp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/dp/kmp.cpp.s"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/dp/kmp.cpp -o CMakeFiles/algorithm.dir/dp/kmp.cpp.s
+
+CMakeFiles/algorithm.dir/dp/longestPalindromeSubseq.cpp.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/dp/longestPalindromeSubseq.cpp.o: ../dp/longestPalindromeSubseq.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/algorithm.dir/dp/longestPalindromeSubseq.cpp.o"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/dp/longestPalindromeSubseq.cpp.o -c /Users/chill/Desktop/code/algorithm/dp/longestPalindromeSubseq.cpp
+
+CMakeFiles/algorithm.dir/dp/longestPalindromeSubseq.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/dp/longestPalindromeSubseq.cpp.i"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chill/Desktop/code/algorithm/dp/longestPalindromeSubseq.cpp > CMakeFiles/algorithm.dir/dp/longestPalindromeSubseq.cpp.i
+
+CMakeFiles/algorithm.dir/dp/longestPalindromeSubseq.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/dp/longestPalindromeSubseq.cpp.s"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/dp/longestPalindromeSubseq.cpp -o CMakeFiles/algorithm.dir/dp/longestPalindromeSubseq.cpp.s
+
 CMakeFiles/algorithm.dir/dp/maxSubArray.cpp.o: CMakeFiles/algorithm.dir/flags.make
 CMakeFiles/algorithm.dir/dp/maxSubArray.cpp.o: ../dp/maxSubArray.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/algorithm.dir/dp/maxSubArray.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/algorithm.dir/dp/maxSubArray.cpp.o"
 	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/dp/maxSubArray.cpp.o -c /Users/chill/Desktop/code/algorithm/dp/maxSubArray.cpp
 
 CMakeFiles/algorithm.dir/dp/maxSubArray.cpp.i: cmake_force
@@ -122,25 +252,75 @@ CMakeFiles/algorithm.dir/dp/maxSubArray.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/dp/maxSubArray.cpp.s"
 	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/dp/maxSubArray.cpp -o CMakeFiles/algorithm.dir/dp/maxSubArray.cpp.s
 
+CMakeFiles/algorithm.dir/dp/sellStock.cpp.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/dp/sellStock.cpp.o: ../dp/sellStock.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/algorithm.dir/dp/sellStock.cpp.o"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/dp/sellStock.cpp.o -c /Users/chill/Desktop/code/algorithm/dp/sellStock.cpp
+
+CMakeFiles/algorithm.dir/dp/sellStock.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/dp/sellStock.cpp.i"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chill/Desktop/code/algorithm/dp/sellStock.cpp > CMakeFiles/algorithm.dir/dp/sellStock.cpp.i
+
+CMakeFiles/algorithm.dir/dp/sellStock.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/dp/sellStock.cpp.s"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/dp/sellStock.cpp -o CMakeFiles/algorithm.dir/dp/sellStock.cpp.s
+
+CMakeFiles/algorithm.dir/dp/stoneGame.cpp.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/dp/stoneGame.cpp.o: ../dp/stoneGame.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/algorithm.dir/dp/stoneGame.cpp.o"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/dp/stoneGame.cpp.o -c /Users/chill/Desktop/code/algorithm/dp/stoneGame.cpp
+
+CMakeFiles/algorithm.dir/dp/stoneGame.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/dp/stoneGame.cpp.i"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chill/Desktop/code/algorithm/dp/stoneGame.cpp > CMakeFiles/algorithm.dir/dp/stoneGame.cpp.i
+
+CMakeFiles/algorithm.dir/dp/stoneGame.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/dp/stoneGame.cpp.s"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/dp/stoneGame.cpp -o CMakeFiles/algorithm.dir/dp/stoneGame.cpp.s
+
 # Object files for target algorithm
 algorithm_OBJECTS = \
+"CMakeFiles/algorithm.dir/dp/LCS.cpp.o" \
 "CMakeFiles/algorithm.dir/dp/LIS.cpp.o" \
+"CMakeFiles/algorithm.dir/dp/REM.cpp.o" \
+"CMakeFiles/algorithm.dir/dp/SuperEggDrop.cpp.o" \
 "CMakeFiles/algorithm.dir/dp/backpack.cpp.o" \
+"CMakeFiles/algorithm.dir/dp/burstBalloons.cpp.o" \
 "CMakeFiles/algorithm.dir/dp/coins.cpp.o" \
+"CMakeFiles/algorithm.dir/dp/editDistant.cpp.o" \
 "CMakeFiles/algorithm.dir/dp/fibonacci.cpp.o" \
-"CMakeFiles/algorithm.dir/dp/maxSubArray.cpp.o"
+"CMakeFiles/algorithm.dir/dp/fourKeyboard.cpp.o" \
+"CMakeFiles/algorithm.dir/dp/greedyAl.cpp.o" \
+"CMakeFiles/algorithm.dir/dp/houseRobber.cpp.o" \
+"CMakeFiles/algorithm.dir/dp/kmp.cpp.o" \
+"CMakeFiles/algorithm.dir/dp/longestPalindromeSubseq.cpp.o" \
+"CMakeFiles/algorithm.dir/dp/maxSubArray.cpp.o" \
+"CMakeFiles/algorithm.dir/dp/sellStock.cpp.o" \
+"CMakeFiles/algorithm.dir/dp/stoneGame.cpp.o"
 
 # External object files for target algorithm
 algorithm_EXTERNAL_OBJECTS =
 
+algorithm: CMakeFiles/algorithm.dir/dp/LCS.cpp.o
 algorithm: CMakeFiles/algorithm.dir/dp/LIS.cpp.o
+algorithm: CMakeFiles/algorithm.dir/dp/REM.cpp.o
+algorithm: CMakeFiles/algorithm.dir/dp/SuperEggDrop.cpp.o
 algorithm: CMakeFiles/algorithm.dir/dp/backpack.cpp.o
+algorithm: CMakeFiles/algorithm.dir/dp/burstBalloons.cpp.o
 algorithm: CMakeFiles/algorithm.dir/dp/coins.cpp.o
+algorithm: CMakeFiles/algorithm.dir/dp/editDistant.cpp.o
 algorithm: CMakeFiles/algorithm.dir/dp/fibonacci.cpp.o
+algorithm: CMakeFiles/algorithm.dir/dp/fourKeyboard.cpp.o
+algorithm: CMakeFiles/algorithm.dir/dp/greedyAl.cpp.o
+algorithm: CMakeFiles/algorithm.dir/dp/houseRobber.cpp.o
+algorithm: CMakeFiles/algorithm.dir/dp/kmp.cpp.o
+algorithm: CMakeFiles/algorithm.dir/dp/longestPalindromeSubseq.cpp.o
 algorithm: CMakeFiles/algorithm.dir/dp/maxSubArray.cpp.o
+algorithm: CMakeFiles/algorithm.dir/dp/sellStock.cpp.o
+algorithm: CMakeFiles/algorithm.dir/dp/stoneGame.cpp.o
 algorithm: CMakeFiles/algorithm.dir/build.make
 algorithm: CMakeFiles/algorithm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable algorithm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable algorithm"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/algorithm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
