@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/chill/Desktop/code/algorithm/data_structure/LRU.cpp">
+			<Option target="algorithm"/>
+		</Unit>
 		<Unit filename="/Users/chill/Desktop/code/algorithm/dp/LCS.cpp">
 			<Option target="algorithm"/>
 		</Unit>

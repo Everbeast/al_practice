@@ -123,6 +123,33 @@ algorithm/fast:
 	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/build
 .PHONY : algorithm/fast
 
+data_structure/LRU.o: data_structure/LRU.cpp.o
+
+.PHONY : data_structure/LRU.o
+
+# target to build an object file
+data_structure/LRU.cpp.o:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/data_structure/LRU.cpp.o
+.PHONY : data_structure/LRU.cpp.o
+
+data_structure/LRU.i: data_structure/LRU.cpp.i
+
+.PHONY : data_structure/LRU.i
+
+# target to preprocess a source file
+data_structure/LRU.cpp.i:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/data_structure/LRU.cpp.i
+.PHONY : data_structure/LRU.cpp.i
+
+data_structure/LRU.s: data_structure/LRU.cpp.s
+
+.PHONY : data_structure/LRU.s
+
+# target to generate assembly for a file
+data_structure/LRU.cpp.s:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/data_structure/LRU.cpp.s
+.PHONY : data_structure/LRU.cpp.s
+
 dp/LCS.o: dp/LCS.cpp.o
 
 .PHONY : dp/LCS.o
@@ -591,6 +618,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... algorithm"
+	@echo "... data_structure/LRU.o"
+	@echo "... data_structure/LRU.i"
+	@echo "... data_structure/LRU.s"
 	@echo "... dp/LCS.o"
 	@echo "... dp/LCS.i"
 	@echo "... dp/LCS.s"

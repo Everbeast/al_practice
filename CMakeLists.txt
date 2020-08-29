@@ -3,4 +3,5 @@ project(algorithm)
 
 set(CMAKE_CXX_STANDARD 14)
 aux_source_directory(./dp DIR_SRCS)
+aux_source_directory(./data_structure DIR_SRCS)
 add_executable(algorithm ${DIR_SRCS})
