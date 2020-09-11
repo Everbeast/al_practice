@@ -1,0 +1,2 @@
+/usr/bin/ar qc libthinking.a  CMakeFiles/thinking.dir/thinking/backtrack.cpp.o
+/usr/bin/ranlib libthinking.a

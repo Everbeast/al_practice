@@ -278,9 +278,22 @@ CMakeFiles/algorithm.dir/dp/stoneGame.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/dp/stoneGame.cpp.s"
 	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/dp/stoneGame.cpp -o CMakeFiles/algorithm.dir/dp/stoneGame.cpp.s
 
+CMakeFiles/algorithm.dir/data_structure/LFU.cpp.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/data_structure/LFU.cpp.o: ../data_structure/LFU.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/algorithm.dir/data_structure/LFU.cpp.o"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/data_structure/LFU.cpp.o -c /Users/chill/Desktop/code/algorithm/data_structure/LFU.cpp
+
+CMakeFiles/algorithm.dir/data_structure/LFU.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/data_structure/LFU.cpp.i"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chill/Desktop/code/algorithm/data_structure/LFU.cpp > CMakeFiles/algorithm.dir/data_structure/LFU.cpp.i
+
+CMakeFiles/algorithm.dir/data_structure/LFU.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/data_structure/LFU.cpp.s"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/data_structure/LFU.cpp -o CMakeFiles/algorithm.dir/data_structure/LFU.cpp.s
+
 CMakeFiles/algorithm.dir/data_structure/LRU.cpp.o: CMakeFiles/algorithm.dir/flags.make
 CMakeFiles/algorithm.dir/data_structure/LRU.cpp.o: ../data_structure/LRU.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/algorithm.dir/data_structure/LRU.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/algorithm.dir/data_structure/LRU.cpp.o"
 	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/data_structure/LRU.cpp.o -c /Users/chill/Desktop/code/algorithm/data_structure/LRU.cpp
 
 CMakeFiles/algorithm.dir/data_structure/LRU.cpp.i: cmake_force
@@ -290,6 +303,149 @@ CMakeFiles/algorithm.dir/data_structure/LRU.cpp.i: cmake_force
 CMakeFiles/algorithm.dir/data_structure/LRU.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/data_structure/LRU.cpp.s"
 	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/data_structure/LRU.cpp -o CMakeFiles/algorithm.dir/data_structure/LRU.cpp.s
+
+CMakeFiles/algorithm.dir/data_structure/MonotonicQueue.cpp.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/data_structure/MonotonicQueue.cpp.o: ../data_structure/MonotonicQueue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/algorithm.dir/data_structure/MonotonicQueue.cpp.o"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/data_structure/MonotonicQueue.cpp.o -c /Users/chill/Desktop/code/algorithm/data_structure/MonotonicQueue.cpp
+
+CMakeFiles/algorithm.dir/data_structure/MonotonicQueue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/data_structure/MonotonicQueue.cpp.i"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chill/Desktop/code/algorithm/data_structure/MonotonicQueue.cpp > CMakeFiles/algorithm.dir/data_structure/MonotonicQueue.cpp.i
+
+CMakeFiles/algorithm.dir/data_structure/MonotonicQueue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/data_structure/MonotonicQueue.cpp.s"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/data_structure/MonotonicQueue.cpp -o CMakeFiles/algorithm.dir/data_structure/MonotonicQueue.cpp.s
+
+CMakeFiles/algorithm.dir/data_structure/MonotonicStack.cpp.cpp.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/data_structure/MonotonicStack.cpp.cpp.o: ../data_structure/MonotonicStack.cpp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/algorithm.dir/data_structure/MonotonicStack.cpp.cpp.o"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/data_structure/MonotonicStack.cpp.cpp.o -c /Users/chill/Desktop/code/algorithm/data_structure/MonotonicStack.cpp.cpp
+
+CMakeFiles/algorithm.dir/data_structure/MonotonicStack.cpp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/data_structure/MonotonicStack.cpp.cpp.i"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chill/Desktop/code/algorithm/data_structure/MonotonicStack.cpp.cpp > CMakeFiles/algorithm.dir/data_structure/MonotonicStack.cpp.cpp.i
+
+CMakeFiles/algorithm.dir/data_structure/MonotonicStack.cpp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/data_structure/MonotonicStack.cpp.cpp.s"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/data_structure/MonotonicStack.cpp.cpp -o CMakeFiles/algorithm.dir/data_structure/MonotonicStack.cpp.cpp.s
+
+CMakeFiles/algorithm.dir/data_structure/bt_nodes_num.cpp.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/data_structure/bt_nodes_num.cpp.o: ../data_structure/bt_nodes_num.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/algorithm.dir/data_structure/bt_nodes_num.cpp.o"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/data_structure/bt_nodes_num.cpp.o -c /Users/chill/Desktop/code/algorithm/data_structure/bt_nodes_num.cpp
+
+CMakeFiles/algorithm.dir/data_structure/bt_nodes_num.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/data_structure/bt_nodes_num.cpp.i"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chill/Desktop/code/algorithm/data_structure/bt_nodes_num.cpp > CMakeFiles/algorithm.dir/data_structure/bt_nodes_num.cpp.i
+
+CMakeFiles/algorithm.dir/data_structure/bt_nodes_num.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/data_structure/bt_nodes_num.cpp.s"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/data_structure/bt_nodes_num.cpp -o CMakeFiles/algorithm.dir/data_structure/bt_nodes_num.cpp.s
+
+CMakeFiles/algorithm.dir/data_structure/bt_op.cpp.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/data_structure/bt_op.cpp.o: ../data_structure/bt_op.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/algorithm.dir/data_structure/bt_op.cpp.o"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/data_structure/bt_op.cpp.o -c /Users/chill/Desktop/code/algorithm/data_structure/bt_op.cpp
+
+CMakeFiles/algorithm.dir/data_structure/bt_op.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/data_structure/bt_op.cpp.i"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chill/Desktop/code/algorithm/data_structure/bt_op.cpp > CMakeFiles/algorithm.dir/data_structure/bt_op.cpp.i
+
+CMakeFiles/algorithm.dir/data_structure/bt_op.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/data_structure/bt_op.cpp.s"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/data_structure/bt_op.cpp -o CMakeFiles/algorithm.dir/data_structure/bt_op.cpp.s
+
+CMakeFiles/algorithm.dir/data_structure/flattenListIt.cpp.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/data_structure/flattenListIt.cpp.o: ../data_structure/flattenListIt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/algorithm.dir/data_structure/flattenListIt.cpp.o"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/data_structure/flattenListIt.cpp.o -c /Users/chill/Desktop/code/algorithm/data_structure/flattenListIt.cpp
+
+CMakeFiles/algorithm.dir/data_structure/flattenListIt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/data_structure/flattenListIt.cpp.i"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chill/Desktop/code/algorithm/data_structure/flattenListIt.cpp > CMakeFiles/algorithm.dir/data_structure/flattenListIt.cpp.i
+
+CMakeFiles/algorithm.dir/data_structure/flattenListIt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/data_structure/flattenListIt.cpp.s"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/data_structure/flattenListIt.cpp -o CMakeFiles/algorithm.dir/data_structure/flattenListIt.cpp.s
+
+CMakeFiles/algorithm.dir/data_structure/lowestComAncestor.cpp.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/data_structure/lowestComAncestor.cpp.o: ../data_structure/lowestComAncestor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/algorithm.dir/data_structure/lowestComAncestor.cpp.o"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/data_structure/lowestComAncestor.cpp.o -c /Users/chill/Desktop/code/algorithm/data_structure/lowestComAncestor.cpp
+
+CMakeFiles/algorithm.dir/data_structure/lowestComAncestor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/data_structure/lowestComAncestor.cpp.i"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chill/Desktop/code/algorithm/data_structure/lowestComAncestor.cpp > CMakeFiles/algorithm.dir/data_structure/lowestComAncestor.cpp.i
+
+CMakeFiles/algorithm.dir/data_structure/lowestComAncestor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/data_structure/lowestComAncestor.cpp.s"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/data_structure/lowestComAncestor.cpp -o CMakeFiles/algorithm.dir/data_structure/lowestComAncestor.cpp.s
+
+CMakeFiles/algorithm.dir/data_structure/min_twitter.cpp.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/data_structure/min_twitter.cpp.o: ../data_structure/min_twitter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/algorithm.dir/data_structure/min_twitter.cpp.o"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/data_structure/min_twitter.cpp.o -c /Users/chill/Desktop/code/algorithm/data_structure/min_twitter.cpp
+
+CMakeFiles/algorithm.dir/data_structure/min_twitter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/data_structure/min_twitter.cpp.i"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chill/Desktop/code/algorithm/data_structure/min_twitter.cpp > CMakeFiles/algorithm.dir/data_structure/min_twitter.cpp.i
+
+CMakeFiles/algorithm.dir/data_structure/min_twitter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/data_structure/min_twitter.cpp.s"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/data_structure/min_twitter.cpp -o CMakeFiles/algorithm.dir/data_structure/min_twitter.cpp.s
+
+CMakeFiles/algorithm.dir/data_structure/priorityQue.cpp.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/data_structure/priorityQue.cpp.o: ../data_structure/priorityQue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/algorithm.dir/data_structure/priorityQue.cpp.o"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/data_structure/priorityQue.cpp.o -c /Users/chill/Desktop/code/algorithm/data_structure/priorityQue.cpp
+
+CMakeFiles/algorithm.dir/data_structure/priorityQue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/data_structure/priorityQue.cpp.i"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chill/Desktop/code/algorithm/data_structure/priorityQue.cpp > CMakeFiles/algorithm.dir/data_structure/priorityQue.cpp.i
+
+CMakeFiles/algorithm.dir/data_structure/priorityQue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/data_structure/priorityQue.cpp.s"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/data_structure/priorityQue.cpp -o CMakeFiles/algorithm.dir/data_structure/priorityQue.cpp.s
+
+CMakeFiles/algorithm.dir/data_structure/queue$(EQUALS)$(EQUALS)stack.cpp.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/data_structure/queue$(EQUALS)$(EQUALS)stack.cpp.o: ../data_structure/queue$(EQUALS)$(EQUALS)stack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/algorithm.dir/data_structure/queue==stack.cpp.o"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/data_structure/queue==stack.cpp.o -c /Users/chill/Desktop/code/algorithm/data_structure/queue==stack.cpp
+
+CMakeFiles/algorithm.dir/data_structure/queue$(EQUALS)$(EQUALS)stack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/data_structure/queue==stack.cpp.i"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chill/Desktop/code/algorithm/data_structure/queue==stack.cpp > CMakeFiles/algorithm.dir/data_structure/queue==stack.cpp.i
+
+CMakeFiles/algorithm.dir/data_structure/queue$(EQUALS)$(EQUALS)stack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/data_structure/queue==stack.cpp.s"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/data_structure/queue==stack.cpp -o CMakeFiles/algorithm.dir/data_structure/queue==stack.cpp.s
+
+CMakeFiles/algorithm.dir/data_structure/reverse_linked_list.cpp.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/data_structure/reverse_linked_list.cpp.o: ../data_structure/reverse_linked_list.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/algorithm.dir/data_structure/reverse_linked_list.cpp.o"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/data_structure/reverse_linked_list.cpp.o -c /Users/chill/Desktop/code/algorithm/data_structure/reverse_linked_list.cpp
+
+CMakeFiles/algorithm.dir/data_structure/reverse_linked_list.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/data_structure/reverse_linked_list.cpp.i"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chill/Desktop/code/algorithm/data_structure/reverse_linked_list.cpp > CMakeFiles/algorithm.dir/data_structure/reverse_linked_list.cpp.i
+
+CMakeFiles/algorithm.dir/data_structure/reverse_linked_list.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/data_structure/reverse_linked_list.cpp.s"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/data_structure/reverse_linked_list.cpp -o CMakeFiles/algorithm.dir/data_structure/reverse_linked_list.cpp.s
+
+CMakeFiles/algorithm.dir/data_structure/serialBT.cpp.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/data_structure/serialBT.cpp.o: ../data_structure/serialBT.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/algorithm.dir/data_structure/serialBT.cpp.o"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/data_structure/serialBT.cpp.o -c /Users/chill/Desktop/code/algorithm/data_structure/serialBT.cpp
+
+CMakeFiles/algorithm.dir/data_structure/serialBT.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/data_structure/serialBT.cpp.i"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chill/Desktop/code/algorithm/data_structure/serialBT.cpp > CMakeFiles/algorithm.dir/data_structure/serialBT.cpp.i
+
+CMakeFiles/algorithm.dir/data_structure/serialBT.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/data_structure/serialBT.cpp.s"
+	/usr/local/Cellar/gcc/9.2.0/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chill/Desktop/code/algorithm/data_structure/serialBT.cpp -o CMakeFiles/algorithm.dir/data_structure/serialBT.cpp.s
 
 # Object files for target algorithm
 algorithm_OBJECTS = \
@@ -310,7 +466,19 @@ algorithm_OBJECTS = \
 "CMakeFiles/algorithm.dir/dp/maxSubArray.cpp.o" \
 "CMakeFiles/algorithm.dir/dp/sellStock.cpp.o" \
 "CMakeFiles/algorithm.dir/dp/stoneGame.cpp.o" \
-"CMakeFiles/algorithm.dir/data_structure/LRU.cpp.o"
+"CMakeFiles/algorithm.dir/data_structure/LFU.cpp.o" \
+"CMakeFiles/algorithm.dir/data_structure/LRU.cpp.o" \
+"CMakeFiles/algorithm.dir/data_structure/MonotonicQueue.cpp.o" \
+"CMakeFiles/algorithm.dir/data_structure/MonotonicStack.cpp.cpp.o" \
+"CMakeFiles/algorithm.dir/data_structure/bt_nodes_num.cpp.o" \
+"CMakeFiles/algorithm.dir/data_structure/bt_op.cpp.o" \
+"CMakeFiles/algorithm.dir/data_structure/flattenListIt.cpp.o" \
+"CMakeFiles/algorithm.dir/data_structure/lowestComAncestor.cpp.o" \
+"CMakeFiles/algorithm.dir/data_structure/min_twitter.cpp.o" \
+"CMakeFiles/algorithm.dir/data_structure/priorityQue.cpp.o" \
+"CMakeFiles/algorithm.dir/data_structure/queue==stack.cpp.o" \
+"CMakeFiles/algorithm.dir/data_structure/reverse_linked_list.cpp.o" \
+"CMakeFiles/algorithm.dir/data_structure/serialBT.cpp.o"
 
 # External object files for target algorithm
 algorithm_EXTERNAL_OBJECTS =
@@ -332,10 +500,22 @@ algorithm: CMakeFiles/algorithm.dir/dp/longestPalindromeSubseq.cpp.o
 algorithm: CMakeFiles/algorithm.dir/dp/maxSubArray.cpp.o
 algorithm: CMakeFiles/algorithm.dir/dp/sellStock.cpp.o
 algorithm: CMakeFiles/algorithm.dir/dp/stoneGame.cpp.o
+algorithm: CMakeFiles/algorithm.dir/data_structure/LFU.cpp.o
 algorithm: CMakeFiles/algorithm.dir/data_structure/LRU.cpp.o
+algorithm: CMakeFiles/algorithm.dir/data_structure/MonotonicQueue.cpp.o
+algorithm: CMakeFiles/algorithm.dir/data_structure/MonotonicStack.cpp.cpp.o
+algorithm: CMakeFiles/algorithm.dir/data_structure/bt_nodes_num.cpp.o
+algorithm: CMakeFiles/algorithm.dir/data_structure/bt_op.cpp.o
+algorithm: CMakeFiles/algorithm.dir/data_structure/flattenListIt.cpp.o
+algorithm: CMakeFiles/algorithm.dir/data_structure/lowestComAncestor.cpp.o
+algorithm: CMakeFiles/algorithm.dir/data_structure/min_twitter.cpp.o
+algorithm: CMakeFiles/algorithm.dir/data_structure/priorityQue.cpp.o
+algorithm: CMakeFiles/algorithm.dir/data_structure/queue$(EQUALS)$(EQUALS)stack.cpp.o
+algorithm: CMakeFiles/algorithm.dir/data_structure/reverse_linked_list.cpp.o
+algorithm: CMakeFiles/algorithm.dir/data_structure/serialBT.cpp.o
 algorithm: CMakeFiles/algorithm.dir/build.make
 algorithm: CMakeFiles/algorithm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable algorithm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/chill/Desktop/code/algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX executable algorithm"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/algorithm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
