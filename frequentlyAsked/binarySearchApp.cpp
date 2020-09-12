@@ -66,3 +66,49 @@ bool canFinish(vector<int>& weights, int D, int cap){
     }
     return false;
 }
+
+
+//
+bool isSubsequence(string s, string t) {
+    int m = s.size();
+    int n = t.size();
+    vector<vector<int>> index(256); //直接字母的ascii码作为索引
+    for(int i = 0; i < n; i++){
+        char c = t[i];
+        index[c].push_back(i);
+    }
+
+    int j = 0;
+    for(int i = 0; i < m; i++){
+        char c = s[i];
+        if(index[c].empty())
+            return false;
+
+
+        int pos = left_bound(index[c], j);
+        if(pos == index[c].size())
+            return false;
+        j = index[c][pos] + 1; //找到c相同的位置 +1指向下一个 即为寻找和s[i + 1]的字符
+    }
+    return true;
+}
+
+int left_bound(vector<int>& nums, int target) {
+    if (nums.size() == 0) return -1;
+    int left = 0;
+    int right = nums.size() - 1; // 注意
+
+    while (left <= right) { // 注意
+        int mid = left + (right - left) / 2;
+        if(nums[mid] == target){
+            right = mid - 1;
+        }else if(nums[mid] > target){
+            right = mid - 1;
+        }else if(nums[mid] < target){
+            left = mid + 1;
+        }
+    }
+    // if(left >= nums.size() || nums[left] != target) return -1; //遇到只有nums只有一个的时候 left==num.size 表示找不到
+                                                                    //left == -1时 应该会回nums[0]的数字
+    return left;
+}
