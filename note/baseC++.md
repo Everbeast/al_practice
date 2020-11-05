@@ -17,7 +17,7 @@
 
 ####代码形式：
 
-<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105142232636.png" alt="image-20201105142232636" style="zoom:67%;" />
+<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105142232636.png" alt="image-20201105142232636" style="zoom:67%;" align="left"/>
 
 #### 头文件的布局
 
