@@ -6,7 +6,7 @@
 
 ### c和c++的区别:
 
-<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105140645750.png" alt="image-20201105140645750" align="left" style="zoom:50%;" />
+<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105140645750.png" alt="image-20201105140645750"  style="zoom:50%;" />
 
 ·object beasted ：面对单一的class的设计
 ·object oriented ：面对多重classes的设计
@@ -17,11 +17,11 @@
 
 ####代码形式：
 
-<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105142232636.png" alt="image-20201105142232636" style="zoom:67%;" align="left"/>
+<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105142232636.png" alt="image-20201105142232636" style="zoom:67%;"/>
 
 #### 头文件的布局
 
-<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105142342804.png" alt="image-20201105142342804" style="zoom:50%;" align="left" />
+<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105142342804.png" alt="image-20201105142342804" style="zoom:50%;" />
 
 其他：
 
@@ -34,7 +34,7 @@
 
 ·该种情况不能return by reference，因为是local object
 
-<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105142838348.png" alt="image-20201105142838348" style="zoom:45%;" align="left" />
+<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105142838348.png" alt="image-20201105142838348" style="zoom:45%;"/>
 
 ·对<<只能是非成员重载（因为只能对cout作用）
 
@@ -181,19 +181,19 @@ copy op=中不自我检测会造成指向空：
 
 如下：queue(container)里有一个deque(component)
 
-<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105152503019.png" alt="image-20201105152503019" style="zoom:50%;" align="left" />
+<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105152503019.png" alt="image-20201105152503019" style="zoom:50%;" />
 
 
 
 **delegation**：委托
 
-<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105152726898.png" alt="image-20201105152726898" style="zoom:69%;" align="left" />
+<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105152726898.png" alt="image-20201105152726898" style="zoom:69%;" />
 
 
 
 inheritance: 继承， 表示 is-a
 
-<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105152945934.png" alt="image-20201105152945934" style="zoom:50%;" align="left"/>
+<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105152945934.png" alt="image-20201105152945934" style="zoom:50%;"/>
 
 虚函数：
 no-virtual：不希望被继承和overried它
@@ -207,7 +207,7 @@ pure virtual：希望子类一定要overried它，因为没有默认定义
 子类继承父类的函数使用virtual关键字，改变该函数的行为，其他行为不变。
 如下：执行流程如灰色线
 
-<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105153349881.png" alt="image-20201105153349881" style="zoom:80%;" align="left"/>
+<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105153349881.png" alt="image-20201105153349881" style="zoom:80%;" />
 
 #### 转换函数
 
@@ -289,17 +289,17 @@ Fraction df = f + 4; //是explicit 无法转换
 
 ####模板模板参数：
 
-<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105161116706.png" alt="image-20201105161116706" style="zoom:35%;" align="left" />
+<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105161116706.png" alt="image-20201105161116706" style="zoom:35%;" />
 
-<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105161155584.png" alt="image-20201105161155584" style="zoom:35%;" align="left" />
+<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105161155584.png" alt="image-20201105161155584" style="zoom:35%;"  />
 
 这不是模版模版参数：
 
-<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105161257354.png" alt="image-20201105161257354" style="zoom:35%;" align="left" />
+<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105161257354.png" alt="image-20201105161257354" style="zoom:35%;"  />
 
 ####虚函数的实现：
 
-<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105161439120.png" alt="image-20201105161439120" style="zoom:50%;" align="left"/>
+<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105161439120.png" alt="image-20201105161439120" style="zoom:50%;" />
 
 
 
@@ -308,4 +308,4 @@ Fraction df = f + 4; //是explicit 无法转换
 const object只会只能调用const版本
 non-const object只会只能调用non-const版本
 
-<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105161756608.png" alt="image-20201105161756608" style="zoom:50%;" align="left" />
+<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105161756608.png" alt="image-20201105161756608" style="zoom:50%;"  />
