@@ -366,9 +366,9 @@ for(auto pos = authors.equal_range(search_item); pos.first != pos.second; ++pos.
 
 使用动态内存的一个常见原因是：允许多个对象共享相同的状态
 
-![image-20201017153145234](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201017153145234.png)
+![image-20201017153145234](https://gitee.com/chillchan/images/raw/master/test/image-20201017153145234.png)
 
-![image-20201017153157730](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201017153157730.png)
+![image-20201017153157730](https://gitee.com/chillchan/images/raw/master/test/image-20201017153157730.png)
 
 make_shared
 
@@ -464,9 +464,9 @@ allocator<string> alloc;
 auto const p = alloc.allocate(n);//分配n个未初始化的string
 ```
 
-![image-20201017162343309](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201017162343309.png)
+![image-20201017162343309](https://gitee.com/chillchan/images/raw/master/test/image-20201017162343309.png)
 
-![image-20201017162526618](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201017162526618.png)
+![image-20201017162526618](https://gitee.com/chillchan/images/raw/master/test/image-20201017162526618.png)
 
 ```c++
 auto p = alloc.allocate(vi.size()*2);//分配比vi空间大一倍的动态内存
@@ -476,7 +476,7 @@ uninitialized_fill_n(q, vi.size(), 42);//剩余的元素都初始化为42
 
 ### 文本查询程序设计：
 
-![image-20201017213633437](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201017213633437.png)
+![image-20201017213633437](https://gitee.com/chillchan/images/raw/master/test/image-20201017213633437.png)
 
 共享数据：在查询数据的时候，拷贝行号会引起很多文件的拷贝，应避免，用shared_ptr来应用这种共享关系
 
@@ -999,13 +999,13 @@ template<typename T> int compare(const T&, const T&)<需要偏特化的类型>{
 
 参数的第一个参数必须是一个引用类型，因此非引用类类型参数是调用拷贝构造函数来初始化的，因此不是引用类型就是无限循环。
 
-![image-20201020204749787](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201020204749787.png)
+![image-20201020204749787](https://gitee.com/chillchan/images/raw/master/test/image-20201020204749787.png)
 
-![image-20201020204801024](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201020204801024.png)
+![image-20201020204801024](https://gitee.com/chillchan/images/raw/master/test/image-20201020204801024.png)
 
 发生拷贝初始化的情况：
 
-![image-20201020204728465](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201020204728465.png)
+![image-20201020204728465](https://gitee.com/chillchan/images/raw/master/test/image-20201020204728465.png)
 
 ### 拷贝赋值运算符
 
@@ -1018,22 +1018,22 @@ public:
 
 返回一个指向其左侧运算对象的引用
 
-![image-20201020205414861](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201020205414861.png)
+![image-20201020205414861](https://gitee.com/chillchan/images/raw/master/test/image-20201020205414861.png)
 
 ### 析构函数
 
-![image-20201020205516738](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201020205516738.png)
+![image-20201020205516738](https://gitee.com/chillchan/images/raw/master/test/image-20201020205516738.png)
 
 当指向一个对象的引用或指针离开作用域时，析构函数不会执行
 
 ·需要自定义析构函数-->几乎肯定也需要自定义**拷贝赋值运算符**和**拷贝构造函数**
-例子：![image-20201020210227563](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201020210227563.png)
+例子：![image-20201020210227563](https://gitee.com/chillchan/images/raw/master/test/image-20201020210227563.png)
 
-当有一个函数如下：![image-20201020210342605](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201020210342605.png)
+当有一个函数如下：![image-20201020210342605](https://gitee.com/chillchan/images/raw/master/test/image-20201020210342605.png)
 
 f返回时，hp和ret都被销毁，而这两者都是指向相同的指针，而该指针被delete了两次，发生错误
 
-![image-20201020210506859](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201020210506859.png)
+![image-20201020210506859](https://gitee.com/chillchan/images/raw/master/test/image-20201020210506859.png)
 
 f(p)之后，p指向的内存被释放了，最后p q都指向无效内存
 
@@ -1056,7 +1056,7 @@ struct NoCopy{
 
 ##### 析构函数不能是删除的
 
-否则无法销毁此类型![image-20201020222706715](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201020222706715.png)
+否则无法销毁此类型![image-20201020222706715](https://gitee.com/chillchan/images/raw/master/test/image-20201020222706715.png)
 
 不能初始化该对象，但是能够定义一个指向该类型的指针，但是不能删除该指针
 
@@ -1068,9 +1068,9 @@ struct NoCopy{
 
 ##### 类的行为像一个值：有自己的状态，拷贝则副本和原对象完全独立。
 
-例子：定义一个HasPtr，对象都必须有自己的拷贝![image-20201020224105451](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201020224105451.png)
+例子：定义一个HasPtr，对象都必须有自己的拷贝![image-20201020224105451](https://gitee.com/chillchan/images/raw/master/test/image-20201020224105451.png)
 
-实现类似：![image-20201020224122342](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201020224122342.png)
+实现类似：![image-20201020224122342](https://gitee.com/chillchan/images/raw/master/test/image-20201020224122342.png)
 
 ```c++
 //赋值运算符定义
@@ -1097,15 +1097,15 @@ HasPtr& HasPtr::operator=(const HasPtr &rhs){
 
 ##### 类的行为像一个指针：状态共享，拷贝则副本和原对象共享底层数据。
 
-例子：![image-20201020224748638](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201020224748638.png)
+例子：![image-20201020224748638](https://gitee.com/chillchan/images/raw/master/test/image-20201020224748638.png)
 
 引用计数：
 
-![image-20201020224733309](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201020224733309.png)
+![image-20201020224733309](https://gitee.com/chillchan/images/raw/master/test/image-20201020224733309.png)
 
-![image-20201020225003958](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201020225003958.png)
+![image-20201020225003958](https://gitee.com/chillchan/images/raw/master/test/image-20201020225003958.png)
 
-![image-20201020225132832](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201020225132832.png)
+![image-20201020225132832](https://gitee.com/chillchan/images/raw/master/test/image-20201020225132832.png)
 
 赋值运算符：
 
@@ -1125,7 +1125,7 @@ HasPtr& HasPtr::operator=(const HasPtr &rhs){
 
 #### 交换操作：
 
-传统的赋值交换 进行了一次拷贝，两次赋值，我们更希望交换指针即可![image-20201020225510284](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201020225510284.png)
+传统的赋值交换 进行了一次拷贝，两次赋值，我们更希望交换指针即可![image-20201020225510284](https://gitee.com/chillchan/images/raw/master/test/image-20201020225510284.png)
 
 声明swap为friend使其能够访问私有成员
 
@@ -1139,7 +1139,7 @@ void swap(Foo &lhs, Foo &rhs){
 
 ##### 赋值运算符中使用swap
 
-![image-20201020230220410](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201020230220410.png)
+![image-20201020230220410](https://gitee.com/chillchan/images/raw/master/test/image-20201020230220410.png)
 
 好处：自动是异常安全的，且正确处理自赋值
 
@@ -1151,7 +1151,7 @@ void swap(Foo &lhs, Foo &rhs){
 
 左值表达值表对象身份   右值表达值表对象的值
 
-![image-20201020233337587](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201020233337587.png)
+![image-20201020233337587](https://gitee.com/chillchan/images/raw/master/test/image-20201020233337587.png)
 
 左值持久；右值短暂；
 
@@ -1170,7 +1170,7 @@ int &&rr3 = std::move(rr1); //ok
 
 move：调用move意味着，除了对rrr1赋值或者销毁它外，不会再使用他。（rr1为移后源）
 
-移动构造函数：![image-20201020234032078](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201020234032078.png)
+移动构造函数：![image-20201020234032078](https://gitee.com/chillchan/images/raw/master/test/image-20201020234032078.png)
 
 承诺对s赋值或销毁外部再使用，因此用s的成员赋值给本对象成员后，都对s的成员=nullptr，即对移后源销毁。
 
@@ -1208,20 +1208,20 @@ StrVec &StrVec::operator=(StrrVec &&rhs) noexcept{
 
 只有当一个类没有定义任何自己版本拷贝控制成员，且类的每个非static数据成员都可以移动式，编译器才会为它合成移动构造函数和移动赋值操作运算符
 
-![image-20201020234931471](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201020234931471.png)
+![image-20201020234931471](https://gitee.com/chillchan/images/raw/master/test/image-20201020234931471.png)
 
 移动操作永远不会隐式定义为删除的函数
 
-如果显式让移动操作=default，则有可能定义为删除的![image-20201020235139570](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201020235139570.png)
+如果显式让移动操作=default，则有可能定义为删除的![image-20201020235139570](https://gitee.com/chillchan/images/raw/master/test/image-20201020235139570.png)
 
-![image-20201020235215442](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201020235215442.png)
+![image-20201020235215442](https://gitee.com/chillchan/images/raw/master/test/image-20201020235215442.png)
 
 #### 拷贝构造和移动构造：
 
 移动构造函数值能用于实参是右值的时候
-拷贝构造适用于任何能够转换为目标类型的时候![image-20201020235422956](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201020235422956.png)
+拷贝构造适用于任何能够转换为目标类型的时候![image-20201020235422956](https://gitee.com/chillchan/images/raw/master/test/image-20201020235422956.png)
 
-如果没有移动构造函数 右值也被拷贝：![image-20201020235454705](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201020235454705.png)
+如果没有移动构造函数 右值也被拷贝：![image-20201020235454705](https://gitee.com/chillchan/images/raw/master/test/image-20201020235454705.png)
 
 拷贝构造代替移动构造几乎肯定是安全的
 
@@ -1229,9 +1229,9 @@ StrVec &StrVec::operator=(StrrVec &&rhs) noexcept{
 
 此时赋值运算符即使移动赋值也是拷贝赋值
 
-![image-20201020235800957](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201020235800957.png)
+![image-20201020235800957](https://gitee.com/chillchan/images/raw/master/test/image-20201020235800957.png)
 
-![image-20201020235820819](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201020235820819.png)
+![image-20201020235820819](https://gitee.com/chillchan/images/raw/master/test/image-20201020235820819.png)
 
 #### 移动迭代器
 
@@ -1258,9 +1258,9 @@ void StrVec::reallocate(){
 
 #### 移动和拷贝的重载：
 
-![image-20201021000511937](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021000511937.png)
+![image-20201021000511937](https://gitee.com/chillchan/images/raw/master/test/image-20201021000511937.png)
 
-![image-20201021000526392](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021000526392.png)
+![image-20201021000526392](https://gitee.com/chillchan/images/raw/master/test/image-20201021000526392.png)
 
 ```c++
 StrVec vec; //空的
@@ -1271,22 +1271,22 @@ vec.push_back("done") //调用移动版本 因为done是临时的，右值
 
 #### 引用限定符：
 
-![image-20201021000818614](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021000818614.png)
+![image-20201021000818614](https://gitee.com/chillchan/images/raw/master/test/image-20201021000818614.png)
 
-![image-20201021000826979](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021000826979.png)
+![image-20201021000826979](https://gitee.com/chillchan/images/raw/master/test/image-20201021000826979.png)
 
 #### 重载 引用：
 
-![image-20201021001228616](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021001228616.png)
+![image-20201021001228616](https://gitee.com/chillchan/images/raw/master/test/image-20201021001228616.png)
 
 对象是一个右值表示没有其他用户，因此可以改变它，故可以原地排序
 左值相反
 
-·如果一个成员函数有引用限定符，这具有相同参数列表的所有版本都必须有引用限定符![image-20201021001430145](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021001430145.png)
+·如果一个成员函数有引用限定符，这具有相同参数列表的所有版本都必须有引用限定符![image-20201021001430145](https://gitee.com/chillchan/images/raw/master/test/image-20201021001430145.png)
 
 ### 面向对象程序设计
 
-使用基类引用（或指针）调用一个虚函数将发生动态绑定![image-20201021105614237](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021105614237.png)![image-20201021105619704](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021105619704.png)
+使用基类引用（或指针）调用一个虚函数将发生动态绑定![image-20201021105614237](https://gitee.com/chillchan/images/raw/master/test/image-20201021105614237.png)![image-20201021105619704](https://gitee.com/chillchan/images/raw/master/test/image-20201021105619704.png)
 
 基类通常应该定义个一个虚析构函数，即使该函数不执行任何实际操作
 
@@ -1295,12 +1295,12 @@ vec.push_back("done") //调用移动版本 因为done是临时的，右值
 派生类到基类的类型转换：
 如果表达式即不是引用类型也不是指针，这他的动态类型永远和静态类型一致
 
-![image-20201021111421848](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021111421848.png)
+![image-20201021111421848](https://gitee.com/chillchan/images/raw/master/test/image-20201021111421848.png)
 
 不存在基类向派生类的转换
-即，派生类向基类自动类型转换至对指针和引用类型有效，派生类和基类之间不存在转换，但是可以用派生类构造基类：![image-20201021113448855](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021113448855.png)
+即，派生类向基类自动类型转换至对指针和引用类型有效，派生类和基类之间不存在转换，但是可以用派生类构造基类：![image-20201021113448855](https://gitee.com/chillchan/images/raw/master/test/image-20201021113448855.png)
 
-每个类控制自己的初始化：![image-20201021111733245](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021111733245.png)
+每个类控制自己的初始化：![image-20201021111733245](https://gitee.com/chillchan/images/raw/master/test/image-20201021111733245.png)
 
 派生类的声明不包含继承列表。
 
@@ -1308,13 +1308,13 @@ vec.push_back("done") //调用移动版本 因为done是临时的，右值
 
 防止继承：class NoDerived final {...}; //添加final关键字
 
-动态绑定只有通过指针或引用调用虚函数才会发生，才会运行时才解析。否则：![image-20201021114011774](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021114011774.png)
+动态绑定只有通过指针或引用调用虚函数才会发生，才会运行时才解析。否则：![image-20201021114011774](https://gitee.com/chillchan/images/raw/master/test/image-20201021114011774.png)
 
 **override：**
 
-![image-20201021114533469](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021114533469.png)
+![image-20201021114533469](https://gitee.com/chillchan/images/raw/master/test/image-20201021114533469.png)
 
-**final：**![image-20201021114605552](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021114605552.png)
+**final：**![image-20201021114605552](https://gitee.com/chillchan/images/raw/master/test/image-20201021114605552.png)
 
 如果虚函数使用了默认实参，这基类和派生类中定义的默认实参最好一致
 
@@ -1330,19 +1330,25 @@ double undiscounted = baseP->Quote::net_price(42);
 
 抽象基类负责定义借口，后续的其他类可以覆盖接口，即派生类给出纯虚函数的定义，否则派生类仍然是抽象类。不能创建抽象基类的对象
 
-#### 友元![image-20201021194916523](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021194916523.png)
+#### 友元
+
+#### ![image-20201021194916523](https://gitee.com/chillchan/images/raw/master/test/image-20201021194916523.png)
 
 clobber只是Sneaky的友元，不是base的友元
 
-private 继承：![image-20201021195013156](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021195013156.png)
+private 继承：
 
-私有继承后，类的用户不能调用基类的成员，但是类内能用：![image-20201021195208840](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021195208840.png)
+![image-20201021195013156](https://gitee.com/chillchan/images/raw/master/test/image-20201021195013156.png)
 
-派生说明符还可以控制继承自派生类的新类的访问权限：![image-20201021195321237](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021195321237.png)
+私有继承后，类的用户不能调用基类的成员，但是类内能用：
 
-派生类向基类的访问行：（假设D继承自B）![image-20201021195538359](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021195538359.png)
+![image-20201021195208840](https://gitee.com/chillchan/images/raw/master/test/image-20201021195208840.png)
 
-友元和继承：![image-20201021200215176](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021200215176.png)
+派生说明符还可以控制继承自派生类的新类的访问权限：![image-20201021195321237](https://gitee.com/chillchan/images/raw/master/test/image-20201021195321237.png)
+
+派生类向基类的访问行：（假设D继承自B）![image-20201021195538359](https://gitee.com/chillchan/images/raw/master/test/image-20201021195538359.png)
+
+友元和继承：![image-20201021200215176](https://gitee.com/chillchan/images/raw/master/test/image-20201021200215176.png)
 
 ![image-20201021200256308](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021200256308.png)
 
@@ -1367,9 +1373,9 @@ protected:
 
 class 默认private继承； struct默认public继承 （应该保持显示声明）
 
-同名情况：![image-20201021201315429](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021201315429.png)
+同名情况：![image-20201021201315429](https://gitee.com/chillchan/images/raw/master/test/image-20201021201315429.png)
 
-基类的析构函数：如如果要删除一个指向派生类对象的基类指针，就需要虚析构函数。此时，无论其派生类使用合成的析构函数还是自己定义的，都是虚析构函数（继承了基类的虚属性）![image-20201021202024446](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021202024446.png)
+基类的析构函数：如如果要删除一个指向派生类对象的基类指针，就需要虚析构函数。此时，无论其派生类使用合成的析构函数还是自己定义的，都是虚析构函数（继承了基类的虚属性）![image-20201021202024446](https://gitee.com/chillchan/images/raw/master/test/image-20201021202024446.png)
 
 虚析构函数将阻止合成移动操作
 
@@ -1379,7 +1385,7 @@ class 默认private继承； struct默认public继承 （应该保持显示声�
 
 移动操作与继承：派生类要有移动操作，其基类必须有移动操作的定义
 
-**派生类和拷贝控制值**：通常使用对应的基类构造函数来初始化对象的基类部分：![image-20201021202554822](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021202554822.png)
+**派生类和拷贝控制值**：通常使用对应的基类构造函数来初始化对象的基类部分：![image-20201021202554822](https://gitee.com/chillchan/images/raw/master/test/image-20201021202554822.png)
 
 派生类和赋值运算符：需要显示调用：
 
@@ -1391,16 +1397,18 @@ D &D::operator=(const D &rhs){
 }
 ```
 
-派生类析构函数：![image-20201021202809190](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021202809190.png)
+派生类析构函数：
+
+![image-20201021202809190](https://gitee.com/chillchan/images/raw/master/test/image-20201021202809190.png)
 
 如果构造函数或析构函数调用了某个虚函数，则应该执行与构造函数或析构函数所属类型相对应的虚函数版本。
 
 **继承构造函数**：
 默认情况下，类不能继承默认、拷贝、移动构造函数，若派生类没有指定，这会被合成
 
-用using来继承构造函数：![image-20201021203132950](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021203132950.png)
+用using来继承构造函数：![image-20201021203132950](https://gitee.com/chillchan/images/raw/master/test/image-20201021203132950.png)
 
-等价于：![image-20201021203203876](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021203203876.png)
+等价于：![image-20201021203203876](https://gitee.com/chillchan/images/raw/master/test/image-20201021203203876.png)
 
 若派生类有自己的数据成员，这会被默认初始化
 
@@ -1414,11 +1422,11 @@ D &D::operator=(const D &rhs){
 
 #### 容器与继承
 
-不能把有继承关系的多种类型对象直接存在容器中，否则派生类部分会被切掉![image-20201021203706145](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021203706145.png)
+不能把有继承关系的多种类型对象直接存在容器中，否则派生类部分会被切掉![image-20201021203706145](https://gitee.com/chillchan/images/raw/master/test/image-20201021203706145.png)
 
 解决方法：在容器中放入指针：
 
-![image-20201021203741249](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021203741249.png)
+![image-20201021203741249](https://gitee.com/chillchan/images/raw/master/test/image-20201021203741249.png)
 
 
 
@@ -1504,9 +1512,9 @@ ostream &print(ostream &os, const QueryResult &qr){
 }
 ```
 
-#改进：<img src="C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021222420414.png" alt="image-20201021222420414" style="zoom:70%;" />
+#改进：<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201021222420414.png" alt="image-20201021222420414" style="zoom:70%;" />
 
-设计：<img src="C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021222547630.png" alt="image-20201021222547630" style="zoom:40%;" /><img src="C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20201021222605648.png" alt="image-20201021222605648" style="zoom:45%;" />
+设计：<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201021222547630.png" alt="image-20201021222547630" style="zoom:40%;" /><img src="https://gitee.com/chillchan/images/raw/master/test/image-20201021222605648.png" alt="image-20201021222605648" style="zoom:45%;" />
 
 实现：
 
