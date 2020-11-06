@@ -1,4 +1,4 @@
-###class之间的关系（面向对象）
+### class之间的关系（面向对象）
 
 ·继承
 ·复合
@@ -15,7 +15,7 @@
 以下用complex类代表无指针成员
        用string 类代表有指针成员
 
-####代码形式：
+#### 代码形式：
 
 <img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105142232636.png" alt="image-20201105142232636" style="zoom:67%;"/>
 
@@ -191,7 +191,7 @@ copy op=中不自我检测会造成指向空：
 
 
 
-inheritance: 继承， 表示 is-a
+**inheritance:** 继承， 表示 is-a
 
 <img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105152945934.png" alt="image-20201105152945934" style="zoom:50%;"/>
 
@@ -287,7 +287,7 @@ Fraction df = f + 4; //是explicit 无法转换
 
 
 
-####模板模板参数：
+#### 模板模板参数：
 
 <img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105161116706.png" alt="image-20201105161116706" style="zoom:35%;" />
 
@@ -297,7 +297,7 @@ Fraction df = f + 4; //是explicit 无法转换
 
 <img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105161257354.png" alt="image-20201105161257354" style="zoom:35%;"  />
 
-####虚函数的实现：
+#### 虚函数的实现：
 
 <img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105161439120.png" alt="image-20201105161439120" style="zoom:50%;" />
 
