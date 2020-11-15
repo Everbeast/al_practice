@@ -161,7 +161,7 @@ String& String::operator=(const String& str){
 
 copy op=中不自我检测会造成指向空：
 
-<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105150459887.png" alt="image-20201105150459887" style="zoom: 33%;" align="left" />
+<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105150459887.png" alt="image-20201105150459887" style="zoom: 33%;" />
 
 #####Stack
 
@@ -181,19 +181,19 @@ copy op=中不自我检测会造成指向空：
 
 如下：queue(container)里有一个deque(component)
 
-<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105152503019.png" alt="image-20201105152503019" style="zoom:50%;" />
+<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105152503019.png" alt="image-20201105152503019" style="zoom:35%;" />
 
 
 
 **delegation**：委托
 
-<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105152726898.png" alt="image-20201105152726898" style="zoom:69%;" />
+<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105152726898.png" alt="image-20201105152726898" style="zoom:335%;" />
 
 
 
 **inheritance:** 继承， 表示 is-a
 
-<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105152945934.png" alt="image-20201105152945934" style="zoom:50%;"/>
+<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105152945934.png" alt="image-20201105152945934" style="zoom:35%;"/>
 
 虚函数：
 no-virtual：不希望被继承和overried它
@@ -207,7 +207,7 @@ pure virtual：希望子类一定要overried它，因为没有默认定义
 子类继承父类的函数使用virtual关键字，改变该函数的行为，其他行为不变。
 如下：执行流程如灰色线
 
-<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105153349881.png" alt="image-20201105153349881" style="zoom:80%;" />
+<img src="https://gitee.com/chillchan/images/raw/master/test/image-20201105153349881.png" alt="image-20201105153349881" style="zoom:40%;" />
 
 #### 转换函数
 
