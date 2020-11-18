@@ -1136,6 +1136,10 @@ minval = ((__min_lv_minval_00 = val1 < va2 ? val1 : val2), __min_lv_minval_00) +
 
 ## 5.1 无继承情况下的对象构造
 
+纯虚类声明了data members， 就应该被被初始化，并且只在constructor中或者是class的其他member functions中指定初始。（可能说纯虚类不应该有data member，但是被共享的数据抽取出来在base class也是正当设计）
+
+pure virtual destructor的class设计者一定要定义他，因为每个derived class destructor会被编译器加以扩张，以静态调用的方式调用每一个virtual base class 以及上一层的base class的destruct。因此只要缺乏任何一个base class destructors的定义的会导致连接失败
+
 #### 1）C struct的Point声明
 
 ```c++
@@ -1237,7 +1241,7 @@ Point foobar()
 
 总的来说，观念上，Point class有一个相关的default copy constructor、copy operator、和destructor。然而它们都是无关痛痒的，而且编译器实际上根本没有产生它们
 
-#### 3）包含虚函数的Point声明
+#### 3）包含虚函数的Point声明（为继承做准备）
 
 包含虚函数时，除了每一个class object多负担一个vptr之外，virtual function的导入也引发编译器对于Point class产生膨胀作用（如，编译器会在构造函数中插入初始化vptr的代码）
 
@@ -1255,6 +1259,7 @@ private:
 * 因为需要处理vptr，所以会合成一个copy constructor和一个copy assignment operator，这两个函数不再是trivial（但隐式的destructor任然是trivial）
 
 ```c++
+//c++伪码：内部膨胀
 Point * Point::Point(Point *this,float x,float y) : _x(x) , _y(y)
 {
     //设定object的virtual table pointer(vptr)
@@ -1317,6 +1322,7 @@ Point foobar(Point &__result)
     __result.Point::Point(local);
 
     //销毁local对象
+    //local.Point::~Point();
 
     return;
 }
@@ -1556,6 +1562,35 @@ inline Vertex3d& Vertex3d::operator=(const Vertex3d &v)
 <br>
 
 # 第6章 执行期语意学
+
+```c++
+class Y{
+public:
+    Y();
+    ~Y();
+    bool operator==(const Y&) const;
+}
+
+class X{
+public:
+    X();
+    ~X();
+    operator Y() const;
+    X getValu();
+}
+
+X xx;
+Y yy;
+//一个式子
+if (yy == xx.getValue())...
+//会转化为
+X temp1 = xx.getValue();
+Y temp2 == temp1.operator Y();
+int temp3 = yy.operator == (temp2);
+if(temp3) ...
+temp2.Y::~Y();
+temp1.X::~X();
+```
 
 ## 6.1 静态对象的构造和析构
 
