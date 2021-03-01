@@ -12,16 +12,14 @@
 
 ### vector和deque的优劣
 
-```
-两者都是连续存储结构
-
-vector支持高校的随机访问和*尾部*插入/删除操作,其他位置插入/删除操作效率低(O(n))
-deque提供两级数组结构, 支持高效的*头尾*插入/删除,同时支持随机访问 但占用内存比vector高
-
-高效随机存取,不在乎插入删除效率,或者只在尾部插入删除,用vector
-需要随机存取,在乎首位插入删除效率,用deque
-大量插入删除,不需要随机存储,用list
-```
+> 两者都是连续存储结构
+>
+> vector支持高校的随机访问和**尾部**插入/删除操作,其他位置插入/删除操作效率低(O(n))
+> deque提供两级数组结构, 支持高效的**头尾**插入/删除,同时支持随机访问 但占用内存比vector高
+>
+> 高效随机存取,不在乎插入删除效率,或者只在尾部插入删除,用vector
+> 需要随机存取,在乎首位插入删除效率,用deque
+> 大量插入删除,不需要随机存储,用list
 
 ### vector的扩容实现
 
@@ -46,8 +44,8 @@ vector维持有capacity变量表示空间容量大小,若vector的size增长至�
 ### 讲讲移动构造函数
 
 ```
-当我们用对象a来初始化对象b后,对象a就不再用了. 
-拷贝构造函数就是就是分配新的空间,将对象a的内容复制到对象b,然后再释放a的空间(不用的话,调用析构)而使用移动构造函数就能避免新的空间分配,降低构造成本
+某情况:当我们用对象a来初始化对象b后,对象a就不再用了. 
+拷贝构造函数(深拷贝的情况下)就是就是分配新的空间,将对象a的内容复制到对象b,然后再释放a的空间(不用的话,调用析构)而使用移动构造函数就能避免新的空间分配,降低构造成本
 
 对于指针: 拷贝构造采用深层赋值, 移动构造函数采用浅层赋值(两个指针指向同一片内存空间,避免被两次释放,就将原来的指针置为NULL)
 
@@ -59,7 +57,8 @@ vector维持有capacity变量表示空间容量大小,若vector的size增长至�
 
 ```c++
 常量指针: const int* cp
-	     int const* cp //两个等价 不能通过该指针改变指向的变量, 无论指向的变量是否为常量
+	     int const* cp //两个等价 
+    //不能通过该指针改变所指变量, 无论所指变量是否为常量
     //若指向的是非常量,可以通过其他方式改变
     //理解:常量的指针(cp是指针,*cp表指向的变量,const表示该指针指向的变量不能改变)
     //可以改变指向哪个变量 因为指针本身是个变量
@@ -85,9 +84,9 @@ a = 1;
 int a = 10;
 int* const b1 = &a;        //顶层const，b1本身是一个常量
 const int* b2 = &a;        //底层const，b2本身可变，所指的对象是常量
-const int b3 = 20; 		   //顶层const，b3是常量不可变
+const int b3 = 20; 		   //顶层const，b3是常量不可变!
 const int* const b4 = &a;  //前一个const为底层，后一个为顶层，b4不可变
-const int& b5 = a;		   //用于声明引用变量，都是底层const
+const int& b5 = a;		   //用于声明引用变量，都是底层const!
 
 const int a = 1;  //a是顶层const  
 //int * pi = &a;  //错误，&a是底层const，不能赋值给非底层const   
@@ -109,15 +108,15 @@ int num = 0;
 const int * p1 = &num;
 //int *p2 = p1 //错误
 const int *p3 = p1;//正确
----
-const_cast只能给变对象的底层const
+--------------------------
+const_cast只能改变对象的底层const
 int num = 4;  
 const int *p = &num;  
 //*p = 5;  //错误，不能改变底层const指针指向的内容  
 int *p_f = const_cast<int *>(p_e);  //正确，const_cast可以改变运算对象的底层const
-//但是使用时一定要知道num_e不是const的类型。  
+                                   //但是使用时一定要知道num不是const的类型。  
 *p_f = 5;  //正确，非顶层const指针可以改变指向的内容  
-cout << num;  //输出5  (把底层const去掉了,能通过*p_f改变num
+cout << num;  //输出5  (把底层const去掉了,能通过*p_f改变num)
 ---
 //顶层const是指针本身常量,和指向的变量没关系
 int num = 4;
@@ -125,9 +124,6 @@ int *const p = &num;
 int *pf = p;
 *pf = 5;
 cout<<num<<endl;//输出5
-    
-
-
 
 ```
 
@@ -146,7 +142,8 @@ cout<<num<<endl;//输出5
 
 sizeof指针是指针本身大小       | sizeof引用得到引用所指变量的大小
 
-指针作为参数传递时,将实参拷贝传递给形参,两者指向同一地址,但是两个变量,在函数中改变形参指针指向,不影响实参,而引用会改变(引用永远就是同一个东西)
+指针作为参数传递时,将实参拷贝传递给形参,两者指向同一地址,但是两个变量.引用会改变(引用永远就是同一个东西)
+(传递指针,形参能改变所指的变量,和实参所指的是同一变量,但不能改变实参指针自己本身)
 void test(int *p)
 {
 　　int a=1;
@@ -166,8 +163,6 @@ int main(void)
 //0x22ff44 1
 //指针p为NUL
 ```
-
-
 
 ## 拷贝构造
 
@@ -235,18 +230,17 @@ int main(void)
 >   }
 >   ```
 >
-> - 形参传递是调用拷贝构造函数（调用的被赋值对象的拷贝构造函数），但并不是所有出现"="的地方都是使用赋值运算符
+>   补:形参传递是调用拷贝构造函数（调用被赋值对象的拷贝构造函数），但并不是所有出现"="的地方都是使用赋值运算符
 >
 >   ```
->  Student s;
+>    Student s;
 >   Student s1 = s;    // 调用拷贝构造函数
 >   Student s2;
 >   s2 = s;    // 赋值运算符操作c++
 >   ```
-> 
+>
 >   注：类中有指针变量时要重写析构函数、拷贝构造函数和赋值运算符
-
-
+>
 
 ### 深拷贝除了改写拷贝构造函数以外还要做什么操作
 
@@ -417,3 +411,88 @@ int main()
 > private继承: 基类公有/保护成员为子类的私有成员,即不能被改子类的子类可见
 >
 > ![68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f666f7274686573706164612f6d65646961496d6167653140312e362e332e342f3230323130322f313536343133323235353034302e706e67](https://gitee.com/chillchan/images/raw/master/test/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f666f7274686573706164612f6d65646961496d6167653140312e362e332e342f3230323130322f313536343133323235353034302e706e67.png)
+
+### STL的内存分配器:
+
+> 分有一级分配器和二级分配器
+>
+> 一级分配器是以malloc() free()等c函数执行的实际内存分配
+>
+> 二级分配器维护16条链表,0-15号链表分别对应8到128字节的内存块(8的倍数)(当需要空间<128字节调用二级分配器,反之调用一级)
+>
+> 步骤:
+>
+> 其实free_list[16]都为空,例如用户申请32字节(25-32的范围都是申请32字节)
+>
+> 查看对应free_list(即free_list[3])是否有挂有内存块:
+>
+> - 有: 就将该块给用户,对应指针下移一位.
+>
+> - 无: 查看内存池是否为空:
+>
+>   ​       ->内存池为空: 申请 2 * 32字节 * 20 + 额外空间作为内存池大小, 将内存池中20 * 32字节 挂到对应free_list上(其中第一块分配给用户,free_list剩余19*32)
+>   
+>   ​       ->内存池不为空: 若内存池够20*32字节的空间, 则将其挂到对应free_list中,then同上(第一块分配给用户...)
+>   
+>   ​                                  若内存池不够则能分配多少就分配多少块 x*32字节空间,then同上(第一块分配给用户...)	
+
+![image-20210301155713197](https://gitee.com/chillchan/images/raw/master/test/image-20210301155713197.png)
+
+### STL迭代器的实现:
+
+> 迭代器内部必须保存一个与容器相关的指针,通过重载各种运算操作来遍历,其中最重要的是*运算符和->运算符,也可能包括++\ --(自增自减)等运算符.
+>
+> 作用:通过迭代器可以在不了解容器内部原理的情况下遍历容器
+>
+> 常用迭代器的里面的内行: iterator_category	value_type	pointer	reference	difference_type
+
+### 简述STL萃取机:
+
+> 一个类模板,里面没有成员,只有类型的重命名,在不再来其他的负担的前提下, 利用模板参数推导功能来向外界提供一些信息 如:
+>
+> iterator_traits:
+>
+> - value_type：迭代器所指对象的型别
+> - difference_type：两个迭代器之间的距离
+> - pointer：迭代器所指向的型别
+> - reference：迭代器所引用的型别
+> - iterator_category
+>
+> type_traits:
+>
+> ```c++
+> __type_traits<T>::has_trivial_default_constructor
+> __type_traits<T>::has_trivial_copy_constructor
+> __type_traits<T>::has_trivial_assignment_operator
+> __type_traits<T>::has_trivial_destructor
+> __type_traits<T>::is_POD_type
+> ```
+>
+> 补充:
+>
+> ```c++
+> struct __true_type{};
+> struct __false_type{};//是类型,在编译期知道
+> true false//是值, 运行时知道
+> ```
+>
+> 是一个空的结构体,作为编译器对类对象参数推导结果(自定义类型如下)
+>
+> ```c++
+> template<> struct __type_traits<Shape>{
+> 	typedef __true_type has_trivial_default_constructor;
+> 	typedef __false_type has_trivial_copy_constructor;
+> 	typedef __false_type has_trivial_assignment_operator;
+> 	typedef __false_type has_trivial_destructor;
+> 	typedef __false_type is_POD_type;
+> };
+> ```
+
+### new一个数组p, delete p和delete[] p的区别
+
+> ![image-20210301163028461](C:\Users\chill\AppData\Roaming\Typora\typora-user-images\image-20210301163028461.png)
+
+### 为什么malloc时需要指定size，对应的free时不需要指定size？
+
+> 调用malloc(size)时,实际分配的内存大小大于size字节, 多出的内存区域有一个结构记录malloc申请的内存大小以及已使用大小等信息. free的时候根据这个结构里的信息来释放内存
+
