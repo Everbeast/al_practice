@@ -27,5 +27,54 @@
 > 扩充:父子进程之间在刚fork后，刚刚创建子进程后:
 > （1）父子相同处: 全局变量、.data、.bbs、.text、栈、堆、环境变量、用户ID、宿主目录（进程用户家目录）、进程工作目录、信号处理方式等等
 > （2）父子不同处: 1.进程ID 2.fork返回值 3.父进程ID 4.进程运行时间 5.闹钟(定时器) 6.未决信号集
-> 
 
+### 如何实现一个线程池
+
+> 用vector来存放创建的线程, 维护一个工作队列, 当有任务到来,先对工作队列上锁,因为该队列被所有线程共享,然后再将任务添加到工作队列中,然后signal条件变量,释放锁.
+>
+> 线程的工作函数不停询问工作队列,若队列为空,则等待. 若被唤醒(被signal) 且队列不为空(while里),则取出队列的任务,线程进行任务的工作.
+
+### 消费者生产者多线程模型中,条件变量等待为什么要在while里面
+
+> 一个生产者可能对应多个消费者,当多个消费者都在处于cond_wait的状态,生产者插入一条数据发出signal, 可能工作队列还是空的,因为可能被其他消费者拿走了,因此需要while一直判断这个条件.若是if的话就不再判断工作队列是否为空,直接继续下去,引起错误.
+
+### 为什么(生成者)条件变量要加锁
+
+> 因为要保证消费者的while条件判断和调用cond_wait的原子性
+>
+> 否则如下:
+>
+> ```c++
+> //thread A(消费者)
+> pthread_mutex_lock(&mutex);
+> while (false == ready) {
+>     //(1)
+>     pthread_cond_wait(&cond, &mutex);
+> }
+> pthread_mutex_unlock(&mutex);
+> 
+> //thread B(生产者)
+> ready = true;
+> pthread_cond_signal(&cond);
+> ```
+>
+> 若在进入while后, cond_wait前,即(1)位置,生产者ready=true,并唤醒. 然后消费者再进去cond_wait,导致永远无法thread A永远无法唤醒
+>
+> 因此要保证条件判断和调用cond_wait的原子性,因此thread B也要加锁
+>
+> ```c++
+> pthread_mutex_lock(&mutex);
+> ready = true;
+> pthread_cond_signal(&cond);
+> pthread_mutex_unlock(&mutex);
+> ```
+
+### 先cond_signal还是先mutex_unlock
+
+> 先cond_signal再mutex_unlock
+>
+> 原因: 先unlock再signal可能会导致优先级反转
+>
+> 1 先unlock,若另一个消费者恰好获取锁, 且条件判断队列不为空,跳过了cond_wait.这样unlock后面的signal就不起作用了(等待中的被唤醒了,队列资源都被人拿了)
+>
+> 2 先unlock 恰好一个优先级更低的不需要条件判断的获取锁,先执行了优先级低的线程.
